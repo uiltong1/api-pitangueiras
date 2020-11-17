@@ -8,7 +8,7 @@ Route::post('auth/login', 'api\AuthController@login'); //ROTA PARA FAZER LOGIN N
 
 //ATENDIMENTO
 Route::get('atendimento', 'api\AtendimentoController@index'); //ROTA PARA LISTAR ATENDIMENTOS
-Route::get('atendimento/{id}', 'api\AtendimentoController@index'); //ROTA PARA CONSULTAR ATENDIMENTO
+Route::get('atendimento/{id}', 'api\AtendimentoController@show'); //ROTA PARA CONSULTAR ATENDIMENTO
 Route::post('atendimento/create', 'api\AtendimentoController@create'); //ROTA PARA FAZER CRIAR ATENDIMENTO
 Route::put('atendimento/update/{id}', 'api\AtendimentoController@update'); //ROTA PARA FAZER ATUALIZAR ATENDIMENTO
 Route::delete('atendimento/destroy/{id}', 'api\AtendimentoController@destroy'); //ROTA PARA FAZER EXCLUIR ATENDIMENTO
